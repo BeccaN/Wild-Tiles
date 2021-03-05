@@ -10,19 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_05_222659) do
+ActiveRecord::Schema.define(version: 2021_03_05_224026) do
 
-  create_table "boards", force: :cascade do |t|
+  create_table "boards_tables", force: :cascade do |t|
     t.string "dimensions"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "tiles", force: :cascade do |t|
-    t.string "img"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "board_id"
+  create_table "tiles_tables", force: :cascade do |t|
+    t.string "url"
   end
 
 end
