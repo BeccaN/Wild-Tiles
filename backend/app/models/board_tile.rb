@@ -1,0 +1,2 @@
+class BoardTile < ApplicationRecord
+end
