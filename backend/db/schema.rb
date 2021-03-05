@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_05_212426) do
-
-  create_table "board_tiles", force: :cascade do |t|
-    t.integer "board_id"
-    t.integer "tile_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 2021_03_05_222659) do
 
   create_table "boards", force: :cascade do |t|
     t.string "dimensions"
@@ -29,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_03_05_212426) do
     t.string "img"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "board_id"
   end
 
 end
